@@ -6,6 +6,8 @@
  *  - A 的 capacity 要能容得下 move 进来的元素, 否则会异常
  *  - move 进来的元素数量为 min(B_end-B_first, end(A) - A_first), 如果 A_first == end(A), 则相当于没有任何元素 move 进来
  *  - move 后 B 里面的元素还可以获取, 但不保证和原来一样
+ *  等级: 知晓
+ *  原因: 正确使用 std API
  */
 
 #include <vector>
