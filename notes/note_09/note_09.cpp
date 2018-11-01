@@ -17,16 +17,17 @@ using namespace std;
 int main(int argc, char **argv) {
   uint16_t value = 1;
 
-  uint16_t * value_p = &value;
+  uint16_t *value_p = &value;
   *value_p = 12;
   cout << boolalpha << (value == 12) << endl;
 
-   uint16_t * const value_const_p = &value;
+  uint16_t *const value_const_p = &value;
   *value_const_p = 13;
   uint16_t another_value = 1;
 //  value_const_p = &another_value;
 
-  const uint16_t * const_value_p = &value;
+  const uint16_t *const_value_p = &value;
 //  *const_value_p = 14;
   const_value_p = value_const_p;
+
 }
